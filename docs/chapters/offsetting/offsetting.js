@@ -72,7 +72,7 @@ reduce(curve) {
     pass2 = [];
 
   // first pass: split on extrema
-  curve.vefify();
+  curve.verify();
   let extrema = curve.extrema().values;
   if (extrema.indexOf(0) === -1) {
     extrema = [0].concat(extrema);
